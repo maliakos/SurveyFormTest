@@ -6,20 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        <title id="title">Welcome to Covid Measures Survey </title>
-    </h1>
-    <p id="desription">Thanks for taking interest in our survey about 
+    
+        <h1 id="title">Welcome to Covid Measures Survey </h1>
+    
+    <p id="description">Thanks for taking interest in our survey about 
         the way people adhere to the measures taken by governments around
         the world to combat the new Corona Virus (SarsCov19) pandemic.
         Let's get started!
 
     </p>
-    <form action="" id="survey_form">
+    <form action="" id="survey-form">
         <label for="name" id="name-label" >Name</label>
-        <input type="text" id="name" name="name" placeholder="Type your name here:">
+        <input type="text" id="name" name="name" placeholder="Type your name here:" required>
         <label for="email" id="email-label">Email</label>
-        <input type="email" id="email" name="email" placeholder="Type your email here">
+        <input type="email" id="email" name="email" placeholder="Type your email here" required>
         <br>
         <label for="number" id="number-label" >How many times approximately do you use hand sanitizer daily?</label>
         <input type="number"id="number" name="number" min="0" max="20" placeholder="Between 0 and 20">
@@ -45,12 +45,30 @@
         <input type="radio" name="education" id="bachelor" value="bachelor">
         <label for="bachelor" id="label-bachelor">Bachelor Degree</label>
         <br> <br> <br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br> 
+        
+        
+        
+        
+        
+        
+        
         <textarea name="message" rows="10" cols="30">
             If you have any comments please do not hesitate !
             </textarea>
             <br> <br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submit">
 
     </form>
+    <footer>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+    
+    </footer>
 </body>
 </html>
