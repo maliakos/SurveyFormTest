@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <title id="title">Welcome to Covid Measures Survey </title>
+    </h1>
+    <p id="desription">Thanks for taking interest in our survey about 
+        the way people adhere to the measures taken by governments around
+        the world to combat the new Corona Virus (SarsCov19) pandemic.
+        Let's get started!
+
+    </p>
+    <form action="" id="survey_form">
+        <label for="name" id="name-label" >Name</label>
+        <input type="text" id="name" name="name" placeholder="Type your name here:">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Type your email here">
+        <br>
+        <label for="number" id="number-label" >How many times approximately do you use hand sanitizer daily?</label>
+        <input type="number"id="number" name="number" min="0" max="20" placeholder="Between 0 and 20">
+        <br>
+        <label for="dropdown" id="dropdown-label">Please select what describes best your daily routines:</label>
+        <select  id="dropdown" name="dropdown">
+         <option value="wash"> I thoroughly wash my hands everytime i enter my house</option>
+         <option value="disinfect">I am meticulous in disinfecting all the items i shoped after entering the house</option>
+         <option value="mask">I dailly use a disposable or washable mask every time i leave my house</option>
+         <option value="all">All of the above describe my daily routine</option>
+        </select>
+        <h3>Please select your gender</h3>
+        <input type="radio" name="gender" id="masculine" value="masculine">
+        <label for="masculine" id="label-masculine">Masculine</label>
+        <input type="radio" name="gender" id="feminine" value="feminine">
+        <label for="feminine" id="label-feminine">Feminine</label>
+        <br>
+        <h3>Please select your educational level</h3>
+        <input type="radio" name="education" id="highschool" value="highschool">
+        <label for="highschool" id="label-highschool">Highschool</label>
+        <input type="radio" name="education" id="college" value="College">
+        <label for="college" id="label-college">College</label>
+        <input type="radio" name="education" id="bachelor" value="bachelor">
+        <label for="bachelor" id="label-bachelor">Bachelor Degree</label>
+        <br> <br> <br>
+        <textarea name="message" rows="10" cols="30">
+            If you have any comments please do not hesitate !
+            </textarea>
+            <br> <br>
+            <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
